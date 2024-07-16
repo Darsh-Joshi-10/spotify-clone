@@ -20,12 +20,12 @@ body {
 }
 
 .left {
-    width: 25vw;
+    width: 18%;
     padding: 10px;
 }
 
 .right {
-    width: 75vw;
+    width: 82%;
 }
 
 
@@ -89,14 +89,25 @@ body {
     padding: 20px;
 }
 
-.spotifyPlaylists {
+.Artists {
     padding: 16px;
 }
 
-.spotifyPlaylists h1 {
+.Artists h1 {
     padding: 16px;
 }
 
+.Albums{
+    padding: 16px;
+}
+
+.Albums h1{
+    padding: 16px;
+}
+
+.Albums .cardContainer .card img{
+    border-radius: 0%;
+}
 .cardContainer {
     margin: 30px;
     display: flex;
@@ -107,10 +118,9 @@ body {
 }
 
 .card {
-    width: 200px;
+    width: 162px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #252525;
     position: relative;
     transition: all .9s;
 }
@@ -118,6 +128,10 @@ body {
     background-color: rgb(105, 103, 103);
     cursor: pointer;
     --a: 1;
+}
+.card p{
+    color:lightgrey;
+    font-size: 12px;
 }
 
 .card>* {
@@ -127,6 +141,7 @@ body {
 .card img {
     width: 100%;
     object-fit: contain;
+    border-radius:50%;
 }
 
 .play {
@@ -376,7 +391,13 @@ body {
     }
 
     .card {
-        width: 55vw;
+        width:100px;
+    }
+
+    .card img{
+        width: 100%;
+        object-fit: contain;
+        border-radius: 50%;
     }
 
     .cardContainer {
@@ -410,6 +431,12 @@ body {
         width: 100%;
     }
 
+    .card img{
+        width: 100%;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
     .header>* {
         padding: 2px;
     }
@@ -422,10 +449,12 @@ body {
         padding: 7px;
     }
 
-    .spotifyPlaylists h1 {
+    .Artists h1 {
         padding: 4px;
     }
-
+    .Albums h1{
+        padding: 4px;
+    }
     .library{
         height: 85vh;
     }
