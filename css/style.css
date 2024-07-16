@@ -5,9 +5,16 @@
     --a:0;
 }
 * {
-    margin: 0;
-    padding: 0;
+    margin:0 0;
+    padding:0 0;
     font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    border:0;
+    margin:0;
+    vertical-align: baseline;
+    width:1903px;
 }
 
 .close {
@@ -17,11 +24,12 @@
 body {
     background-color: black;
     color: white;
+
 }
 
 .left {
     width: 18%;
-    padding: 10px;
+    padding: 2.5px;
 }
 
 .right {
@@ -80,6 +88,8 @@ body {
 }
 
 .header {
+    height: 50px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     background-color: rgb(34 34 34);
@@ -108,6 +118,23 @@ body {
 .Albums .cardContainer .card img{
     border-radius: 0%;
 }
+
+.Popular-radio{
+    padding: 16px;
+}
+
+.Popular-radio h1{
+    padding: 16px;
+}
+
+.Popular-radio h3{
+    font-size: 16px;
+}
+
+.Popular-radio .cardContainer .card img{
+    border-radius:0%;
+}
+
 .cardContainer {
     margin: 30px;
     display: flex;
@@ -158,6 +185,10 @@ body {
     right: 17px;
     opacity: var(--a);
     transition: all 1s ease-out;
+}
+
+.buttons{
+    padding-top:5px
 }
 
 .buttons>* {
@@ -462,8 +493,3 @@ body {
     .left{ 
         width: 100vw;
     }
-
- 
-
-    
-}
